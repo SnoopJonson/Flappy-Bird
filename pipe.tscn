@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://dwd383fdp4pus"]
+
+[ext_resource type="Texture2D" uid="uid://bt2of5xvp0f7r" path="res://FlappyBirdPipe.png" id="1_71b0o"]
+[ext_resource type="Script" path="res://pipe.gd" id="1_exovv"]
+[ext_resource type="AudioStream" uid="uid://bjuhusixfukv3" path="res://Metal pipe falling sound effect but its more violent.mp3" id="2_5tm31"]
+[ext_resource type="AudioStream" uid="uid://drl128mi4wkvv" path="res://LetsFuckingGO.mp3" id="4_hlq78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w08s3"]
+size = Vector2(14.4, 3.52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h81oq"]
+size = Vector2(11.2, 174.72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rknsk"]
+size = Vector2(8.4, 47.2)
+
+[node name="Pipe" type="Node2D"]
+position = Vector2(9.53674e-07, -1.19209e-07)
+scale = Vector2(2.5, 2.5)
+script = ExtResource("1_exovv")
+metadata/_edit_lock_ = true
+
+[node name="HitBox" type="Area2D" parent="."]
+scale = Vector2(2.5, 2.5)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-6.10352e-07, 1.76)
+shape = SubResource("RectangleShape2D_w08s3")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, 91.04)
+shape = SubResource("RectangleShape2D_h81oq")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, -20.8)
+shape = SubResource("RectangleShape2D_w08s3")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, -106.4)
+shape = SubResource("RectangleShape2D_h81oq")
+metadata/_edit_lock_ = true
+
+[node name="MetalPipe" type="AudioStreamPlayer" parent="HitBox"]
+stream = ExtResource("2_5tm31")
+
+[node name="FlappyBirdPipe" type="Sprite2D" parent="."]
+position = Vector2(0, 223)
+texture = ExtResource("1_71b0o")
+metadata/_edit_lock_ = true
+
+[node name="FlappyBirdPipe2" type="Sprite2D" parent="."]
+position = Vector2(1.36851e-12, -270.4)
+rotation = 3.14159
+texture = ExtResource("1_71b0o")
+metadata/_edit_lock_ = true
+
+[node name="Point" type="Area2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Point"]
+position = Vector2(4.4, -23.6)
+shape = SubResource("RectangleShape2D_rknsk")
+metadata/_edit_lock_ = true
+
+[node name="PointSound" type="AudioStreamPlayer" parent="Point"]
+stream = ExtResource("4_hlq78")
+volume_db = 24.0
+
+[connection signal="body_entered" from="HitBox" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Point" to="." method="_on_point_body_entered"]

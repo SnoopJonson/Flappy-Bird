@@ -1,0 +1,104 @@
+[gd_scene load_steps=12 format=3 uid="uid://casnh6lj067gk"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_15ucm"]
+[ext_resource type="PackedScene" uid="uid://cijjmqcno7jc0" path="res://Player/player_character.tscn" id="1_rcj1s"]
+[ext_resource type="PackedScene" uid="uid://ckefwdrmymbxc" path="res://Background.tscn" id="1_ux3tc"]
+[ext_resource type="Script" path="res://Pipes.gd" id="3_uhiwh"]
+[ext_resource type="PackedScene" uid="uid://d3ei6gk8sjfij" path="res://floor_tile.tscn" id="5_1ceu0"]
+[ext_resource type="Script" path="res://FloorTiles.gd" id="5_aipr3"]
+[ext_resource type="FontFile" uid="uid://bj3lxnkh5ecwc" path="res://using_fonts_monospace_bitmap_font_example.webp" id="5_m0ljd"]
+[ext_resource type="AudioStream" uid="uid://by1qa4so6074e" path="res://ni-as-in-paris-goofy-ahh-remix-By-tuna.voicemod.net.mp3" id="6_fyfny"]
+[ext_resource type="Texture2D" uid="uid://5mmh78rictne" path="res://IgiveUP.jpg" id="9_rm3v0"]
+
+[sub_resource type="GDScript" id="GDScript_r3tl0"]
+script/source = "extends CanvasLayer
+
+
+func _process(_delta):
+	get_node(\"Score\").text = str(get_node(\"..\").points)
+	pass
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_5un62"]
+line_spacing = 0.0
+font = ExtResource("5_m0ljd")
+font_size = 40
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_15ucm")
+
+[node name="GoofyAhhBeat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fyfny")
+volume_db = -2.0
+autoplay = true
+bus = &"Music"
+
+[node name="Background" parent="." instance=ExtResource("1_ux3tc")]
+
+[node name="Pipes" type="Node2D" parent="."]
+script = ExtResource("3_uhiwh")
+
+[node name="FloorTiles" type="Node2D" parent="."]
+script = ExtResource("5_aipr3")
+
+[node name="FloorTile2" parent="FloorTiles" instance=ExtResource("5_1ceu0")]
+position = Vector2(202.5, 895)
+
+[node name="FloorTile3" parent="FloorTiles" instance=ExtResource("5_1ceu0")]
+position = Vector2(337.5, 895)
+
+[node name="FloorTile4" parent="FloorTiles" instance=ExtResource("5_1ceu0")]
+position = Vector2(472.5, 895)
+
+[node name="FloorTile" parent="FloorTiles" instance=ExtResource("5_1ceu0")]
+position = Vector2(67.5, 895)
+
+[node name="FloorTile5" parent="FloorTiles" instance=ExtResource("5_1ceu0")]
+position = Vector2(607.5, 895)
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("1_rcj1s")]
+position = Vector2(170, 483)
+metadata/_edit_lock_ = true
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = SubResource("GDScript_r3tl0")
+
+[node name="Score" type="Label" parent="UI"]
+offset_left = 220.0
+offset_top = 128.0
+offset_right = 300.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_m0ljd")
+theme_override_font_sizes/font_size = 48
+text = "10"
+label_settings = SubResource("LabelSettings_5un62")
+horizontal_alignment = 1
+justification_flags = 0
+metadata/_edit_lock_ = true
+
+[node name="PlayAgain" type="Button" parent="UI"]
+visible = false
+offset_left = 60.0
+offset_top = 664.0
+offset_right = 244.0
+offset_bottom = 702.0
+text = "Try again"
+
+[node name="Quit" type="Button" parent="UI"]
+visible = false
+offset_left = 304.0
+offset_top = 664.0
+offset_right = 488.0
+offset_bottom = 702.0
+text = "Quit (like a bitch)"
+
+[node name="IgiveUp" type="Sprite2D" parent="UI"]
+visible = false
+position = Vector2(270, 352)
+scale = Vector2(0.434783, 0.226557)
+texture = ExtResource("9_rm3v0")
+
+[connection signal="pressed" from="UI/PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="UI/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cijjmqcno7jc0"]
+
+[ext_resource type="Script" path="res://Player/PlayerCharacter.gd" id="1_we21w"]
+[ext_resource type="Texture2D" uid="uid://b2p74yoxy1ol" path="res://FlappyBirdCharSprite.png" id="2_b5b5u"]
+[ext_resource type="AudioStream" uid="uid://bjuhusixfukv3" path="res://Metal pipe falling sound effect but its more violent.mp3" id="3_h8ir4"]
+[ext_resource type="AudioStream" uid="uid://cu1ik85darms6" path="res://Horou.mp3" id="4_6llt0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_723x1"]
+custom_solver_bias = 1.0
+radius = 5.74912
+height = 15.5064
+
+[node name="PlayerCharacter" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_we21w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+rotation = -1.58825
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_723x1")
+metadata/_edit_lock_ = true
+
+[node name="FlappyBirdCharSprite" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_b5b5u")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(100, 0)
+limit_top = 0
+limit_bottom = 906
+
+[node name="MetalPipe" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_h8ir4")
+
+[node name="Horou" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6llt0")
