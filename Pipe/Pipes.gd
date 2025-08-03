@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var newPipe = preload("res://pipe.tscn")
+var newPipe = preload("pipe.tscn")
 var delPipe = null
 var nextDeletePipe = null
 

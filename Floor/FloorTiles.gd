@@ -1,6 +1,6 @@
 extends Node2D
 
-var newPlat = preload("res://floor_tile.tscn")
+var newPlat = preload("floor_tile.tscn")
 var deleteTile = null
 @onready var upNextTile = get_node("FloorTile")
 func spawnPlatform(xPos, yPos):

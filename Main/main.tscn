@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://c3lwgi213uyum"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_av3j2"]
-[ext_resource type="Texture2D" uid="uid://b2p74yoxy1ol" path="res://FlappyBirdCharSprite.png" id="2_gjcv8"]
-[ext_resource type="Texture2D" uid="uid://bmnmcs0a5snlu" path="res://FlappyBirdBackground.png" id="2_nqnf8"]
-[ext_resource type="AudioStream" uid="uid://wrgotdnh7hj" path="res://Trophy Gallery - Super Smash Bros. Brawl.mp3" id="4_xnltt"]
+[ext_resource type="Script" uid="uid://dtiaag7qwilec" path="res://Main/Main.gd" id="1_av3j2"]
+[ext_resource type="Texture2D" uid="uid://b2p74yoxy1ol" path="res://Player/FlappyBirdCharSprite.png" id="2_gjcv8"]
+[ext_resource type="Texture2D" uid="uid://bmnmcs0a5snlu" path="res://Background/FlappyBirdBackground.png" id="2_nqnf8"]
+[ext_resource type="AudioStream" uid="uid://wrgotdnh7hj" path="res://Music/Trophy Gallery - Super Smash Bros. Brawl.mp3" id="4_xnltt"]
 [ext_resource type="FontFile" uid="uid://bj3lxnkh5ecwc" path="res://using_fonts_monospace_bitmap_font_example.webp" id="5_n4rfb"]
-[ext_resource type="VideoStream" path="res://IAteThebfiweuaobfuiwea.ogv" id="6_q12ug"]
+[ext_resource type="VideoStream" uid="uid://mamx48q3nuvg" path="res://Main/IAteThebfiweuaobfuiwea.ogv" id="6_q12ug"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g55bo"]
 font = ExtResource("5_n4rfb")
@@ -23,7 +23,7 @@ texture = ExtResource("2_nqnf8")
 metadata/_edit_lock_ = true
 
 [node name="FlappyBirdCharSprite" type="Sprite2D" parent="."]
-position = Vector2(256, 376)
+position = Vector2(256, 442)
 rotation = -0.314159
 scale = Vector2(13.87, 13.87)
 texture = ExtResource("2_gjcv8")
@@ -34,10 +34,11 @@ stream = ExtResource("4_xnltt")
 autoplay = true
 
 [node name="Main Title" type="Label" parent="."]
-offset_top = 140.0
-offset_right = 540.0
-offset_bottom = 236.0
-text = "Get Addicted 
+offset_left = 32.0
+offset_top = 141.0
+offset_right = 512.0
+offset_bottom = 224.0
+text = "Get Addicted
 Bitch"
 label_settings = SubResource("LabelSettings_g55bo")
 horizontal_alignment = 1
@@ -64,17 +65,20 @@ buffering_msec = 10
 metadata/_edit_lock_ = true
 
 [node name="EasterEgg" type="Button" parent="."]
+visible = false
 offset_left = 296.0
-offset_top = 319.0
+offset_top = 385.0
 offset_right = 310.0
-offset_bottom = 347.0
+offset_bottom = 413.0
 rotation = -0.305274
+metadata/_edit_lock_ = true
 
 [node name="Play" type="Button" parent="."]
 offset_left = 64.0
 offset_top = 704.0
 offset_right = 192.0
 offset_bottom = 767.0
+button_mask = 3
 text = "Play"
 metadata/_edit_lock_ = true
 

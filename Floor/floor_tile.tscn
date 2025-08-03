@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d3ei6gk8sjfij"]
 
-[ext_resource type="Texture2D" uid="uid://b813cc4nmad2v" path="res://Floor.png" id="1_4v3dy"]
-[ext_resource type="Script" path="res://floor_tile.gd" id="1_fyg5g"]
+[ext_resource type="Texture2D" uid="uid://b813cc4nmad2v" path="res://Floor/Floor.png" id="1_4v3dy"]
+[ext_resource type="Script" uid="uid://ehld85ph0y4e" path="res://Floor/floor_tile.gd" id="1_fyg5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js6lt"]
 size = Vector2(135, 22)
