@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmnmcs0a5snlu"
-path="res://.godot/imported/FlappyBirdBackground.png-c93657a4084e9ed55952a73b3519005d.ctex"
+uid="uid://5mmh78rictne"
+path="res://.godot/imported/IgiveUP.jpg-49864f171684388f028627970d3aee58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FlappyBirdBackground.png"
-dest_files=["res://.godot/imported/FlappyBirdBackground.png-c93657a4084e9ed55952a73b3519005d.ctex"]
+source_file="res://GameArena/IgiveUP.jpg"
+dest_files=["res://.godot/imported/IgiveUP.jpg-49864f171684388f028627970d3aee58.ctex"]
 
 [params]
 

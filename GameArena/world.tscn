@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://casnh6lj067gk"]
 
-[ext_resource type="Script" path="res://world.gd" id="1_15ucm"]
+[ext_resource type="Script" uid="uid://be7duxfvd4wqm" path="res://GameArena/world.gd" id="1_15ucm"]
 [ext_resource type="PackedScene" uid="uid://cijjmqcno7jc0" path="res://Player/player_character.tscn" id="1_rcj1s"]
-[ext_resource type="PackedScene" uid="uid://ckefwdrmymbxc" path="res://Background.tscn" id="1_ux3tc"]
-[ext_resource type="Script" path="res://Pipes.gd" id="3_uhiwh"]
-[ext_resource type="PackedScene" uid="uid://d3ei6gk8sjfij" path="res://floor_tile.tscn" id="5_1ceu0"]
-[ext_resource type="Script" path="res://FloorTiles.gd" id="5_aipr3"]
+[ext_resource type="PackedScene" uid="uid://ckefwdrmymbxc" path="res://Background/Background.tscn" id="1_ux3tc"]
+[ext_resource type="Script" uid="uid://dnbjvcdur5x6d" path="res://Pipe/Pipes.gd" id="3_uhiwh"]
+[ext_resource type="PackedScene" uid="uid://d3ei6gk8sjfij" path="res://Floor/floor_tile.tscn" id="5_1ceu0"]
+[ext_resource type="Script" uid="uid://bmpv8yirl800b" path="res://Floor/FloorTiles.gd" id="5_aipr3"]
 [ext_resource type="FontFile" uid="uid://bj3lxnkh5ecwc" path="res://using_fonts_monospace_bitmap_font_example.webp" id="5_m0ljd"]
-[ext_resource type="AudioStream" uid="uid://by1qa4so6074e" path="res://ni-as-in-paris-goofy-ahh-remix-By-tuna.voicemod.net.mp3" id="6_fyfny"]
-[ext_resource type="Texture2D" uid="uid://5mmh78rictne" path="res://IgiveUP.jpg" id="9_rm3v0"]
+[ext_resource type="AudioStream" uid="uid://by1qa4so6074e" path="res://Music/ni-as-in-paris-goofy-ahh-remix-By-tuna.voicemod.net.mp3" id="6_fyfny"]
+[ext_resource type="Texture2D" uid="uid://5mmh78rictne" path="res://GameArena/IgiveUP.jpg" id="9_rm3v0"]
 
 [sub_resource type="GDScript" id="GDScript_r3tl0"]
 script/source = "extends CanvasLayer

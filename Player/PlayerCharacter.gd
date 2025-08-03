@@ -24,7 +24,7 @@ func _physics_process(delta):
 		pass
 	
 	
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_bird_jump"):
 		if dead:
 			pass
 		else:
@@ -55,4 +55,3 @@ func die():
 		get_node("..").tryAgain()
 		
 	
-

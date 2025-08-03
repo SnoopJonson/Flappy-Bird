@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cijjmqcno7jc0"]
 
-[ext_resource type="Script" path="res://Player/PlayerCharacter.gd" id="1_we21w"]
-[ext_resource type="Texture2D" uid="uid://b2p74yoxy1ol" path="res://FlappyBirdCharSprite.png" id="2_b5b5u"]
-[ext_resource type="AudioStream" uid="uid://bjuhusixfukv3" path="res://Metal pipe falling sound effect but its more violent.mp3" id="3_h8ir4"]
-[ext_resource type="AudioStream" uid="uid://cu1ik85darms6" path="res://Horou.mp3" id="4_6llt0"]
+[ext_resource type="Script" uid="uid://bkd84qt4drnk6" path="res://Player/PlayerCharacter.gd" id="1_we21w"]
+[ext_resource type="Texture2D" uid="uid://b2p74yoxy1ol" path="res://Player/FlappyBirdCharSprite.png" id="2_b5b5u"]
+[ext_resource type="AudioStream" uid="uid://bjuhusixfukv3" path="res://Music/Metal pipe falling sound effect but its more violent.mp3" id="3_h8ir4"]
+[ext_resource type="AudioStream" uid="uid://cu1ik85darms6" path="res://Music/Horou.mp3" id="4_6llt0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_723x1"]
 custom_solver_bias = 1.0
