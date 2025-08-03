@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmnmcs0a5snlu"
-path="res://.godot/imported/FlappyBirdBackground.png-40962d620ea0ba3dff183342058c15cd.ctex"
+uid="uid://b2p74yoxy1ol"
+path="res://.godot/imported/FlappyBirdCharSprite.png-30c780182cd3238ec29949c7242a8091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/FlappyBirdBackground.png"
-dest_files=["res://.godot/imported/FlappyBirdBackground.png-40962d620ea0ba3dff183342058c15cd.ctex"]
+source_file="res://Scenes/Player/FlappyBirdCharSprite.png"
+dest_files=["res://.godot/imported/FlappyBirdCharSprite.png-30c780182cd3238ec29949c7242a8091.ctex"]
 
 [params]
 

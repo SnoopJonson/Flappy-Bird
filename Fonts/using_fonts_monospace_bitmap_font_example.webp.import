@@ -3,12 +3,12 @@
 importer="font_data_image"
 type="FontFile"
 uid="uid://bj3lxnkh5ecwc"
-path="res://.godot/imported/using_fonts_monospace_bitmap_font_example.webp-5007cb931714937d707e149c695d1739.fontdata"
+path="res://.godot/imported/using_fonts_monospace_bitmap_font_example.webp-1475d93d375d35229f9adf86d10d46c1.fontdata"
 
 [deps]
 
-source_file="res://using_fonts_monospace_bitmap_font_example.webp"
-dest_files=["res://.godot/imported/using_fonts_monospace_bitmap_font_example.webp-5007cb931714937d707e149c695d1739.fontdata"]
+source_file="res://Fonts/using_fonts_monospace_bitmap_font_example.webp"
+dest_files=["res://.godot/imported/using_fonts_monospace_bitmap_font_example.webp-1475d93d375d35229f9adf86d10d46c1.fontdata"]
 
 [params]
 

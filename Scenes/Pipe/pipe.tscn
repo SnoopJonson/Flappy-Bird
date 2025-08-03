@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dwd383fdp4pus"]
 
-[ext_resource type="Texture2D" uid="uid://bt2of5xvp0f7r" path="res://Pipe/FlappyBirdPipe.png" id="1_71b0o"]
-[ext_resource type="Script" uid="uid://c3y6ixjf81ruf" path="res://Pipe/pipe.gd" id="1_exovv"]
+[ext_resource type="Texture2D" uid="uid://bt2of5xvp0f7r" path="res://Scenes/Pipe/FlappyBirdPipe.png" id="1_71b0o"]
+[ext_resource type="Script" uid="uid://c3y6ixjf81ruf" path="res://Scenes/Pipe/pipe.gd" id="1_exovv"]
 [ext_resource type="AudioStream" uid="uid://bjuhusixfukv3" path="res://Music/Metal pipe falling sound effect but its more violent.mp3" id="2_5tm31"]
 [ext_resource type="AudioStream" uid="uid://drl128mi4wkvv" path="res://Music/LetsFuckingGO.mp3" id="4_hlq78"]
 

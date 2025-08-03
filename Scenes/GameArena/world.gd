@@ -15,7 +15,7 @@ func tryAgain():
 
 
 func _on_quit_pressed():
-	get_tree().change_scene_to_file("res://Main/main.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Main/main.tscn")
 	# get_tree().quit()
 	
 

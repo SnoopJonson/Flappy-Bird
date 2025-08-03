@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt2of5xvp0f7r"
-path="res://.godot/imported/FlappyBirdPipe.png-4243d4f410c4ee21699a53e6846b16a5.ctex"
+uid="uid://5mmh78rictne"
+path="res://.godot/imported/IgiveUP.jpg-a7bece75b8ae25a996cb5721a6150727.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pipe/FlappyBirdPipe.png"
-dest_files=["res://.godot/imported/FlappyBirdPipe.png-4243d4f410c4ee21699a53e6846b16a5.ctex"]
+source_file="res://Scenes/GameArena/IgiveUP.jpg"
+dest_files=["res://.godot/imported/IgiveUP.jpg-a7bece75b8ae25a996cb5721a6150727.ctex"]
 
 [params]
 
